@@ -46,13 +46,13 @@
   Спочатку нормуємо ранги по банках: $\tilde{r}_{ik} = \frac{r_{ik}-1}{n-1}\in[0,1]$,
   тоді
 
-  $$\text{Score}_i^{\text{avg}} = \sum_k w_k \cdot \tilde{r}_{ik}, \quad \text{менше — краще}.$$
+  $$ \text{Score}_i^{\text{avg}} = \sum_k w_k \cdot \tilde{r}_{ik}, \quad \text{менше — краще}. $$
 
 ### 3) Узгодженість індикаторів — **Кендалл W**
 
-За матрицею рангів $R \in \mathbb{R}^{n\times m}$ (n — банки, m — індикатори):
+За матрицею рангів $ R \in \mathbb{R}^{n\times m} $ (n — банки, m — індикатори):
 
-$$W = \frac{12\sum_{i=1}^n(\bar{R}_i - \bar{R})^2}{m^2(n^3-n)}, \quad W\in[0,1].$$
+$$ W = \frac{12\sum_{i=1}^n(\bar{R}_i - \bar{R})^2}{m^2(n^3-n)}, \quad W\in[0,1]. $$
 
 $W\approx 1$ — індикатори дуже **узгоджені**; $W\approx 0$ — **хаотичні**.
 
